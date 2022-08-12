@@ -18,7 +18,7 @@ export default function Parent() {
         <p>Count: {parentCount}</p>
         <button onClick={updateCount}>parent plus</button>
       </div>
-      <Child />
+      <Child parentCount={parentCount} />
     </div>
   );
 }

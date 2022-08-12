@@ -15,7 +15,7 @@ function LiftingStateUp() {
       <div className="top">나는 부모</div>
       <div className="bottom">
         <FirstChild />
-        <SecondChild count={count} />
+        <SecondChild count={count} setCount={setCount} />
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import MonsterDetail from "./Lectures/UrlParameters/MonsterDetail";
 import StateProps from "./Lectures/StateProps/StateProps";
 import MenuTab from "./Lectures/MenuTab/MenuTab";
 import Lifecycle from "./Lectures/LifeCycle";
+import LiftingStateUp from "./Lectures/LiftingStateUp/LiftingStateUp";
 
 export default function Router() {
   return (
@@ -19,6 +20,7 @@ export default function Router() {
         <Route path="/monsters/detail/" element={<MonsterDetail />} />
         <Route path="/pagination" element={<Pagination />} />
         <Route path="/lifecycle" element={<Lifecycle />} />
+        <Route path="/liftingStateUp" element={<LiftingStateUp />} />
       </Routes>
     </BrowserRouter>
   );
