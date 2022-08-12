@@ -7,7 +7,7 @@ export default function Index() {
   return (
     <div>
       <Parent />
-      {/* <FetchError /> */}
+      <FetchError />
     </div>
   );
 }

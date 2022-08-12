@@ -6,7 +6,9 @@ export default function FetchError() {
   useEffect(() => {
     fetch("/message.json")
       .then((res) => res.json())
-      .then((res) => {});
+      .then((res) => {
+        setData(res);
+      });
   }, []);
 
   return (
