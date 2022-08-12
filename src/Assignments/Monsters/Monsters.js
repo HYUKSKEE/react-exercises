@@ -33,7 +33,7 @@ function Monsters() {
   // SearchBox 에 props로 넘겨줄 handleChange 메소드 정의
 
   const searchValue = monsters.filter((list) =>
-    list.name.toLowerCase().includes(userInput)
+    list.name.toLowerCase().includes(userInput.toLowerCase())
   );
 
   const handleChange = (e) => {
