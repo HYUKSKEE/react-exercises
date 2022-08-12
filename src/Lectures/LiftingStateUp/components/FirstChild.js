@@ -1,13 +1,13 @@
 import React from "react";
 
-function FirstChild() {
+function FirstChild({ addHandler, subtractHandler }) {
   return (
     <div className="firstChild">
       FirstChild
       <div>여기서 누르는 버튼이</div>
       <div className="body">
-        <button onClick={() => console.log("나는 빼기")}>-</button>
-        <button onClick={() => console.log("나는 더하기")}>+</button>
+        <button onClick={subtractHandler}>-</button>
+        <button onClick={addHandler}>+</button>
       </div>
     </div>
   );
